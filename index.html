@@ -46,7 +46,7 @@
             <div>
                 <ul class="horizontal-list text-center social-icons">
                     <li>
-                        <a href="https://www.linkedin.com/in/satyam-dhote-01147a138//" target="_blank">
+                        <a href="https://www.linkedin.com/in/satyamdhote0507/" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
@@ -62,16 +62,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-stack-overflow"></i>
+                        <a href="https://github.com/Satyamdhote">
+                            <i class="fab fa-github"></i>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
                 </ul>
 
             </div>
@@ -89,7 +84,10 @@
             <div id="about-para">
 
                 <p>
-                    I am currently working in <span class="text-highlight">CloudThat</span> as <span class="text-highlight">FullStack Engineer</span>. I love problem solving and Web Development and looking for opportunities for working in an Organizations which hons my skills as Software Developer. I have got 2 years of Experience in Web Development. Having fundamental knowledge of Data Structures and Algorithms, Software design, Web development and testing. Seeking to utilize broad education background with excellent analytical ,technical and programming skills to work as an experienced<span class="text-highlight">Software developer</span>.
+                    I am currently working in <span class="text-highlight">Custiv</span> as <span class="text-highlight">Senior FullStack Engineer</span>. I am highly skilled software developer with 5 years of experience in full-stack development, cloud computing, and
+                    designing scalable microservices. I have a proven track record of improving system performance, enhancing user
+                    experiences, and delivering robust solutions. Proficient in modern web technologies, DevOps practices, and agile
+                    methodologies, with a strong focus on problem-solving and team collaboration.</span>.
                 </p>
 
             </div>
@@ -183,13 +181,26 @@
                 <div class="timeline-box ">
                     <div class="timeline-container">
                         <div class="timeline-logo">
+                            <img src="https://media.licdn.com/dms/image/v2/C560BAQE-EO3exSXT7Q/company-logo_200_200/company-logo_200_200/0/1630664099520/custiv_logo?e=1749081600&v=beta&t=whQZ8q-p7b6lgtqt1K3NTdZtVnJPOV6owkSIA6eby1I">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Senior Fullstack Developer </h3>
+                        <h4 class="experience-company-name"> Custiv, Banglore </h4>
+                        <h5 class="experience-duration m0"> December 2023 - Present </h5>
+
+                        <p class="experience-description text-align-justify">Developing a manufacturing technology solution that streamlines the entire process from order creation to order completion, providing real-time updates to clients via a web platform.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
                             <img src="https://cdn.dribbble.com/users/507972/screenshots/3191820/media/114f046de3769d9ead6eda8fad823eb8.jpg?compress=1&resize=400x300&vertical=top">
                         </div>
-                        <h3 class="experience-designation  m0 m-blue"> Software Developer </h3>
+                        <h3 class="experience-designation  m0 m-blue"> Senior Software Developer </h3>
                         <h4 class="experience-company-name"> CloudThat, Banglore </h4>
-                        <h5 class="experience-duration m0"> December 2021 - Present </h5>
+                        <h5 class="experience-duration m0"> December 2021 - December 2023 </h5>
 
-                        <p class="experience-description text-align-justify">Working on an Educational Gaming App CloudAttack which uses NodeJS and TypeScript in backend </p>
+                        <p class="experience-description text-align-justify">Developed CloudAttack, an educational gaming app designed to help college students and tech freshers learn cloud skills through a quiz-based gaming experience.</p>
                     </div>
                 </div>
 
@@ -344,16 +355,6 @@ is created using NodeJS and stored in MongoDB
                     </div>
 
                 </div>
-                <!-- <div class="portfolio-image-container">
-                    <img src="https://files.codingninjas.in/static-blog-01-6119.jpg">
-                    <div class="portfolio-details">
-                        <p>
-                            Created a blog like Web App using React.js and hosted using Firestore 
-                            <p><a href="https://react-hooks-blog-8f2fe.web.app">Blog App</a></p>
-                        </p>
-                    </div>
-
-                </div> -->
                 <div class="portfolio-image-container">
                     <img src="./assets/Instagram.png">
                     <div class="portfolio-details">
@@ -361,17 +362,7 @@ is created using NodeJS and stored in MongoDB
                             Created Instagram clone using ReactJS and MaterialUI
                         </p>
                     </div>
-
                 </div>
-                <!-- <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000028_1550237365_tree.jpeg">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div> -->
 
             </div>
         </section>
@@ -384,20 +375,64 @@ is created using NodeJS and stored in MongoDB
                 <span> Contact </span>
             </h1>
             <div id="contact-container">
-
+        
                 <div id="contact-form-container">
                     <form id="contact-form">
-                        <input id="input-name" name="name" type="text" placeholder="Your Name">
-                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
-                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <input id="input-name" name="from_name" type="text" placeholder="Your Name" required>
+                        <input id="input-email" name="email" type="email" required placeholder="Your Email">
+                        <textarea id="input-message" name="message" rows="2" cols="40" placeholder="Message" required></textarea>
                         <button class="sub-btn" type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
+        
+                <!-- EmailJS Script -->
+                <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Initialize EmailJS
+                        emailjs.init("QLqvVYrYg2i8LTnqW");
+                        
+                        // Get the form element
+                        const contactForm = document.getElementById("contact-form");
+                        
+                        // Add event listener to the form
+                        if (contactForm) {
+                            contactForm.addEventListener("submit", function(event) {
+                                event.preventDefault();
+                                console.log("Attempting to send email...");
+                                
+                                // Extract form values
+                                const nameValue = document.getElementById("input-name").value;
+                                const emailValue = document.getElementById("input-email").value;
+                                const messageValue = document.getElementById("input-message").value;
+                                
+                                // Create template parameters object
+                                const templateParams = {
+                                    from_name: nameValue,
+                                    name: nameValue,         // For backward compatibility
+                                    email: emailValue,
+                                    message: messageValue,
+                                    reply_to: emailValue     // Sets the reply-to address
+                                };
+                                
+                                // Send email with explicit parameters
+                                emailjs.send("service_oe1wtou", "template_6st6jki", templateParams)
+                                    .then(function(response) {
+                                        console.log("Email sent successfully!", response);
+                                        alert("Message Sent Successfully!");
+                                        contactForm.reset(); // Optional: reset form after successful submission
+                                    }, function(error) {
+                                        console.error("Email failed to send:", error);
+                                        alert("Failed to send message. Please try again.");
+                                    });
+                            });
+                        } else {
+                            console.error("Contact form not found!");
+                        }
+                    });
+                </script>
+        
                 <div id="my-details-container">
-
-<!--                     <h3> Get In touch </h3>
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
- -->
                     <h3> My Address </h3>
                     <div class="my-details-info-container">
                         <i class="fas fa-map-marker-alt"></i>
@@ -413,36 +448,27 @@ is created using NodeJS and stored in MongoDB
                     </div>
                 </div>
             </div>
-
+        
             <div class="text-center social-icons">
-
                 <ul class="horizontal-list">
-
                     <li>
-                        <a href="https://www.linkedin.com/in/satyam-dhote-01147a138//" target="_blank">
+                        <a href="https://www.linkedin.com/in/satyam-dhote-01147a138/" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-                      <li>
+                    <li>
                         <a href="https://www.facebook.com/satyam.dhote.9" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
-
                     <li>
                         <a href="https://www.quora.com/profile/Satyam-Dhote" target="_blank">
                             <i class="fab fa-quora"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
+                        <a href="https://github.com/Satyamdhote">
+                            <i class="fab fa-github"></i>
                         </a>
                     </li>
                 </ul>
